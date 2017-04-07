@@ -1,0 +1,42 @@
+<div style="padding-right:0;" class="col s12 m9 ln9full">
+    <div class="formcontainer z-depth-1">
+        <div class="formheading"><span class="Fueltext">Railway Reciept List( C &amp; F TPT)</span></div>
+        <div class="formwrap">
+            <div class="row">
+                <div class="col m12 l12">
+                    <div style="overflow-x:auto;" class="table rrlisttbl striped center-align">
+                        <div class="thead table-head">
+                            <div class="tr">
+                                <div class="th">rrnumber</div>
+                                <div class="th">rrdate</div>
+                                <div class="th">consignor name</div>
+                                <div class="th">consignor brand</div>
+                                <div class="th">consignee name</div>
+                                <div class="th">rrquantity</div>
+                                <div class="th">Action</div>
+                                <div class="th">Action</div>
+                            </div>
+                        </div>
+                        <div class="tbody">
+                            <div class="tr rrobjformdata" *ngFor="let rr of rrList">
+                                <div class="td">{{rr.RRNumber}}</div>
+                                <div class="td">{{rr.RRDate}}</div>
+                                <div class="td">{{rr.consignorName}}</div>
+                                <div class="td">{{rr.consignorBrand}}</div>
+                                <div class="td">{{rr.consigneeName}}</div>
+                                <div class="td">{{rr.RRQuantity}}</div>
+                                <div class="td">
+                                    <button type="submit" value="Add RR Invoice" class="rlist rrlistinvoiceaddsubmit">Add RR Invoice</button>
+                                </div>
+                                <div class="td">
+                                    <button class="actionbtn rrlistedit"><i title="edit" type="button" class="material-icons actionicon">edit</i></button>
+                                    <button class="actionbtn rlist rrlistinvoiceviewsubmit"><i title="view" type="button" class="material-icons actionicon">view_list</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

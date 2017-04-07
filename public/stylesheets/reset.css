@@ -1,0 +1,76 @@
+
+img {
+    vertical-align: middle;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+address,cite,dfn,em,var {
+    font-style: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    vertical-align: top;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+*html.clearfix {
+    height: 1%;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '/0821';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+embed{ /*for the damn thouder plugin*/
+    display: none;
+}
+
+/*********************************************/

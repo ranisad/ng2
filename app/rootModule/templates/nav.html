@@ -1,0 +1,184 @@
+<div class="navbar-fixed z-depth-3">
+    <nav role="navigation">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12 m1 l1" style="padding-left:0"><a class="material-icons menuicon" id="ilogo-container">menu</a></div>
+                <div class="col s12 m1 l1"><a class="brand-logo" id="logo-container" href="/">TMS</a></div>
+                <div class="col s12 m5 l5 right">
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <div class="input-field ip-search">
+                                <input id="search" type="search" required="">
+                                <label for="search"><i class="material-icons right" style="font-size:2.1rem; color: rgba(255, 255, 255, 0.4)">right search</i></label>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" onclick="toggleFullScreen(document.getElementById('bodyID'))" style="padding-left:8px"><i class="material-icons iconopacity" id="bodyID" style="font-size:2.6rem">fullscreen</i></a>
+                        </li>
+                        <li><a href="undefined/logout" style="padding-left:8px"><i class="material-icons iconopacity" id="bodyID" style="font-size:2.6rem">power_settings_new</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="maincontainer">
+    <div class="cd-popup" id="master0" role="alert">
+        <div class="cd-popup-container">
+            <h1>Vehicle</h1><a class="cd-popup-close img-replace" href="">Close</a>
+            <div id="column">
+                <div>
+                    <ul>
+                        <li><a href="undefined/formfields/vehiclelist">Vehicle list</a></li>
+                        <li class="subhead"><a href="undefined/formfields/addvehicle">Add New Vehicle</a></li>
+                        <li class="heading">Service Details</li>
+                        <li><a href="undefined/formfields/fuel-formfields">Petrol</a></li>
+                        <li><a href="undefined/formfields/services-formfields">Servicing</a></li>
+                        <li><a href="undefined/formfields/cabinwork-formfields">Cabin & body panting</a></li>
+                        <li><a href="undefined/formfields/monsooncover-formfields">Mansoon Cover</a></li>
+                        <li><a href="undefined/formfields/tyre-formfields">Tyre & tube</a></li>
+                        <li><a href="undefined/formfields/generalexpenses">General Expenses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="heading">Renewals</li>
+                        <li><a href="undefined/formfields/RTO-formfields">RTO</a></li>
+                        <li><a href="undefined/masters/updateFitness">Fitnesh</a></li>
+                        <li><a href="undefined/masters/updatePUC">PUC</a></li>
+                        <li><a href="undefined/masters/updateRoadTax">Road Tax</a></li>
+                        <li>EMI</li>
+                        <li><a href="undefined/formfields/insurance-formfields">Insurance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="cd-popup" id="master1" role="alert">
+        <div class="cd-popup-container">
+            <h1>Masters</h1><a class="cd-popup-close img-replace" href="">Close</a>
+            <div id="column">
+                <div class="content">
+                    <ul class="width150">
+                        <li class="heading">Vehicle</li>
+                        <li><a href="undefined/masters/vehicleType">Add VehicleType</a></li>
+                        <li><a href="undefined/formfields/services-formfields">Battery  Maker</a></li>
+                        <li><a href="undefined/masters">more ...</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Location</li>
+                        <li><a href="undefined/locations/addBelt">Belt</a></li>
+                        <li><a href="undefined/locations/area">Area</a></li>
+                        <li><a href="undefined/locations">more ...</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Transaction</li>
+                        <li><a href="undefined/masters/rrtype">Add RRType</a></li>
+                        <li><a href="undefined/masters/lorryType">Add LorryType</a></li>
+                        <li><a href="undefined/masters">more ...</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Company</li>
+                        <li><a href="undefined/masters/companyGroups">Add Company Groups</a></li>
+                        <li><a href="undefined/masters/companyType">Add Company Type</a></li>
+                        <li><a href="undefined/masters">more ...</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Employees</li>
+                        <li><a href="undefined/hrd/addpersondetails">Add Person Details</a></li>
+                        <li><a href="undefined/masters/qualifications"> Add Degree</a></li>
+                        <li><a href="undefined/masters">more ...</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Brand and Depo</li>
+                        <li><a href="undefined/locations/brand">Brand</a></li>
+                        <li><a href="undefined/locations/depo">Depo</a></li>
+                        <li><a href="undefined/locations/Depo-rates">Depo Rates</a></li>
+                    </ul>
+                    <ul class="width150">
+                        <li class="heading">Listings</li>
+                        <li><a href="undefined/companydetailslisting">Company Listing</a></li>
+                        <li><a href="undefined/employeelisting">Employee Listing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="cd-popup" id="transaction_popup" role="alert">
+        <div class="cd-popup-container">
+            <h1>Transaction</h1><a class="cd-popup-close img-replace" href="#0">Close</a>
+            <div id="column">
+                <div>
+                    <ul>
+                        <li class="subhead"><a href="undefined/formslayout/selectFlow">Add New Freight</a></li>
+                        <li class="heading">For Regular Clients</li>
+                        <li><a href="undefined/rrlist">Add invoice details</a></li>
+                        <li><a href="undefined/formslayout/addwagondetail">Add Wagon Details</a></li>
+                        <li></li>
+                        <li><a href="undefined/rrlistonlytpt">Add LR details for Only TPT</a></li>
+                        <li><a href="undefined/invoicelisting">Add LR Details for others</a></li>
+                        <li><a href="undefined/deliverychallanlisting">Add Final Challan Details</a></li>
+                        <li><a href="undefined/formslayout/addSAPdetails">Add SAP Details</a></li>
+                    </ul>
+                    <div>
+                        <ul>
+                            <li class="heading">For Ishita Client</li>
+                            <li><a href="undefined/rrlist">RR List (C&F)</a></li>
+                            <li><a href="undefined/rrlistonlytpt">RR List (RST)</a></li>
+                            <li><a href="undefined/alllrwithouthamaliamount">Add Hamali Amount</a></li>
+                            <li><a href="undefined/billing/generateinvoice">Generate Invoice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="cd-popup" id="hr_popup" role="alert">
+        <div class="cd-popup-container">
+            <h1>HR</h1><a class="cd-popup-close img-replace" href="#0">Close</a>
+            <div id="column">
+                <div>
+                    <ul>
+                        <li><a href="undefined/hr/employee-attendance">Add employee attendance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="cd-popup" id="adminaccess" role="alert">
+        <div class="cd-popup-container">
+            <h1>Admin</h1><a class="cd-popup-close img-replace" href="">Close</a>
+            <div id="column">
+                <div class="content">
+                    <ul class="width150">
+                        <li class="heading">Admin Access</li>
+                        <li><a href="undefined/admin/permisionsList">Add Permission List</a></li>
+                        <li><a href="undefined/admin/roleList">Roles Management</a></li>
+                        <li><a href="undefined/admin/usersList">User Management</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m1 ln1" style="padding-left:0">
+            <div class="nav-container z-depth-2">
+                <ul class="nav">
+                    <li><a href="/"><i class="demo-icon icon-home"></i><span class="text" style="display:none">Home</span></a></li>
+                    <li><a class="cd-popup-trigger" href="" data-href="#master0"><i class="demo-icon icon-vehicle"></i><span class="text" style="display:none">Vehicle</span></a></li>
+                    <li><a class="cd-popup-trigger" href="" data-href="#master1"><i class="active demo-icon icon-masters"></i><span class="text" style="display:none">Masters</span></a></li>
+                    <li><a class="cd-popup-trigger" href="#" data-href="#transaction_popup"><i class="demo-icon icon-transaction"></i><span class="text" style="display:none">Transaction</span></a></li>
+                    <li><a class="cd-popup-trigger" href="" data-href="#adminaccess"><i class="demo-icon material-icons" style="font-size:1.9rem; padding-top:15px">supervisor_account</i><span class="text" style="display:none">Admin</span></a></li>
+                    <li><a class="cd-popup-trigger" href="" data-href="#hr_popup"><i class="demo-icon icon-hr"></i><span class="text" style="display:none">HR</span></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

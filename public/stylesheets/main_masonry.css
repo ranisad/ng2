@@ -1,0 +1,104 @@
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+}
+
+.masonry {
+    margin: 1.5em 0 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    width: 100%;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 1em 3.5em 0em 0em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; font-size: 11px;
+
+}
+.item ul li label{ font-size: 11px; color: #58595b;}
+.vt-heading{ border-bottom: #00a1f1 solid 1px; color: #00a1f1; font-size: 1.5em; text-transform: capitalize; padding-bottom: 10px;}
+
+.masonry [type="checkbox"] + label::before, [type="checkbox"]:not(.filled-in) + label::after {
+    border: 1px solid #666666;
+    border-radius: 1px;
+    content: "";
+    height: 12px;
+    left: 0;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease 0s;
+    width: 12px;
+    z-index: 0;
+}
+.masonry [type="checkbox"] + label {
+    -moz-user-select: none;
+    color: #58595b;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.7rem;
+    line-height: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+.masonry [type="checkbox"]:checked + label::before {
+    backface-visibility: hidden;
+    border-color: transparent #26a69a #26a69a transparent;
+    border-style: solid;
+    border-width: 2px;
+    height: 22px;
+    left: -5px;
+    top: -4px;
+    transform: rotate(40deg);
+    transform-origin: 100% 100% 0;
+    width: 12px;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+        column-count: 7;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+
+}
